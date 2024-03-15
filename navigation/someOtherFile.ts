@@ -1,7 +1,3 @@
-import rainbow from "./myFunction";
+import sub from "./myFunction";
 
-const main = () => {
-  console.log(rainbow());
-};
-
-main();
+console.log(sub(1, 3));

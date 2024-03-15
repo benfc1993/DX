@@ -1,0 +1,24 @@
+{
+  "name": "dx",
+  "version": "1.0.0",
+  "description": "DX talk repository",
+  "main": "index.js",
+  "scripts": {
+    "generate:docs": "./documentation/generate-docs.sh",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benfc1993/DX.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benfc1993/DX/issues"
+  },
+  "homepage": "https://github.com/benfc1993/DX#readme",
+  "devDependencies": {
+    "husky": "^9.0.11"
+  }
+}
