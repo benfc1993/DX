@@ -1,0 +1,19 @@
+{
+  "name": "p5-present",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && esbuild src/presentation/index.ts  --bundle --outdir=dist --minify && cp -r public/* dist",
+    "watch": "mkdir -p dist && cp -r public/* dist && esbuild src/presentation/index.ts  --bundle --outdir=dist --minify --watch --servedir=dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ENVIRONMENT=PROD yarn watch "
+  },
+  "dependencies": {
+    "esbuild": "^0.20.1"
+  },
+  "devDependencies": {
+    "@types/p5": "^1.7.6",
+    "typescript": "^4.9.5"
+  }
+}
