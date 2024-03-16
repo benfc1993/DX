@@ -1,8 +1,9 @@
-import { fadeInAnim } from "@/lib/index";
-import { RectElement, SlideData, TitleElement } from "@/lib/index";
-import p5 from "p5";
-import { titleFontSize } from "../..";
-import { slideBackground } from "./baseSlide";
+import { fadeInAnim, linearMoveAnim } from '@/lib/index'
+import { RectElement, SlideData, TitleElement } from '@/lib/index'
+import p5 from 'p5'
+import { titleFontSize } from '../..'
+import { slideBackground } from './baseSlide'
+import { typeAnim } from '../../animations/typeAnim'
 
 export const titleSlide = (
   title: string,
@@ -17,17 +18,18 @@ export const titleSlide = (
           element: (p: p5) =>
             new TitleElement(
               p,
-              { x: "50%", y: "50%" },
+              { x: 350, y: '50%' },
               {
                 text: title,
                 size: titleFontSize,
-                alignment: { h: "center", v: "center" },
+                alignment: { h: 'left', v: 'center' },
                 color: color,
               },
             ),
-          animation: fadeInAnim,
+          animation: typeAnim,
+          duration: 100,
         },
       },
     },
   ],
-});
+})
