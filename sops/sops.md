@@ -1,7 +1,8 @@
 [<- Back](../docs.md)
+
 # SOPS and env files
 
-This dir contains two scripts: `[encrypt-env-local.sh](./encrypt-env-local.sh)` and `[decrypt-env-local.sh](./decrypt-env-local.sh)`.
+This dir contains two scripts: [encrypt-env-local.sh](./encrypt-env-local.sh) and [decrypt-env-local.sh](./decrypt-env-local.sh).
 
 The scripts require a gpg key to be present on your system. You can then add the id to the .sops.yaml file.
 
