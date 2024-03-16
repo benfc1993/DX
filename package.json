@@ -4,6 +4,8 @@
   "description": "DX talk repository",
   "main": "index.js",
   "scripts": {
+    "env:encrypt": "./sops/encrypt-env-local.sh",
+    "env:decrypt": "./sops/decrypt-env-local.sh",
     "generate:docs": "./documentation/generate-docs.sh",
     "prepare": "husky"
   },
@@ -20,5 +22,8 @@
   "homepage": "https://github.com/benfc1993/DX#readme",
   "devDependencies": {
     "husky": "^9.0.11"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.30.2"
   }
 }

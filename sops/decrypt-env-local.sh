@@ -1,8 +1,14 @@
 #!/usr/bin/env bash
 
-repo_root=$(git rev-parse --show-toplevel)
+REPO_ROOT=$(git rev-parse --show-toplevel)
 
-if test -f "$repo_root/.env.local"; then
+SOPS_DIR="$( dirname "${BASH_SOURCE[0]}")"
+ENV_FILE="$REPO_ROOT/.env.local"
+SOPS_FILE="env.yml"
+
+cd $SOPS_DIR
+
+if test -f "$ENV_FILE"; then
     read -n 1 -s -p "file exists overwrite Y/n: " overwrite
     overwrite=$(echo $overwrite | tr '[:upper:]' '[:lower:]')
     echo ""
@@ -13,7 +19,7 @@ if [[ -z $(echo $overwrite) ]]; then
 fi
 
 if [[ $overwrite == "y" ]]; then
-    sops --decrypt env.yml > "$repo_root/.env.local"
+    sops --decrypt --output-type dotenv $SOPS_FILE > "$ENV_FILE"
     echo ".env.local written"
 else
     echo "Decryption exited"
