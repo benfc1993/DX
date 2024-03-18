@@ -1,5 +1,3 @@
 import { updateStat } from './updateStat'
 
-updateStat('name', 'Ben')
-
-updateStat('speed', 1)
+updateStat('position', [1, 5])

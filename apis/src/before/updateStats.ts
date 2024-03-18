@@ -1,13 +1,13 @@
-import { playerStats } from '../playerStats'
+import { playerStats } from './playerStats'
 import type { PlayerStat } from '../types'
 
-const updateStat = <TValue>(stat: PlayerStat<TValue>, value: TValue) => {
+export const updateStat = <TValue>(stat: PlayerStat<TValue>, value: TValue) => {
   try {
     const newValue = stat.schema.parse(value)
 
     return stat.updateValue(newValue)
   } catch (err) {
-    return null
+    throw new Error('Invalid value')
   }
 }
 

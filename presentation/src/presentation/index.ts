@@ -6,6 +6,8 @@ import { documentationExample } from './slides/documentationExample'
 import { uiUxSlide } from './slides/uiUx'
 import { diDxSlide } from './slides/diDx'
 import { coverSlide } from './slides/cover'
+import { refactoringOne } from './slides/refactoringSlideOne'
+import { refactoringTwo } from './slides/refactoringSlideTwo'
 
 export const colors: Record<string, [number, number, number]> = {
   teal: [60, 161, 156],
@@ -38,9 +40,11 @@ export const presentation: PresentationData<typeof fonts, typeof images> = {
     diDxSlide,
     titleSlide('Navigation', colors.red),
     titleSlide('APIs', colors.yellow),
-    titleSlide('Refactoring', colors.teal),
+    titleSlide('Testing', colors.teal),
+    titleSlide('Refactoring', colors.blue),
+    refactoringOne,
+    refactoringTwo,
     titleSlide('.env.local', colors.orange),
-    titleSlide('Testing', colors.blue),
     titleSlide('Documentation', colors.red),
     documentationExample(),
     titleSlide('Bloat', colors.yellow),
