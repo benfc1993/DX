@@ -1,4 +1,4 @@
-import { playerStats } from '../playerStats'
+import { playerStats } from './playerStats'
 import type { PlayerStatValue } from '../types'
 
 export function updateStat<TKey extends keyof typeof playerStats>(
@@ -12,6 +12,6 @@ export function updateStat<TKey extends keyof typeof playerStats>(
 
     return stat.updateValue(value)
   } catch (err) {
-    return null
+    throw new Error(`Invalid stat value`)
   }
 }

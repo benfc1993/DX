@@ -64,7 +64,7 @@ export const coverSlide: SlideData = {
         },
         github: {
           element: (p) =>
-            new ElementGroup(p, { x: '50%', y: '95%' }, [
+            new ElementGroup(p, { x: '50%', y: '90%' }, [
               new TextElement(
                 p,
                 { x: 0, y: -100 },

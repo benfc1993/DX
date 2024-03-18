@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { PlayerStat } from './types'
+import { PlayerStat } from '../types'
 
 const health: PlayerStat<number> = {
   defaultValue: 0,

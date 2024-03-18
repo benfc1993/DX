@@ -1,5 +1,5 @@
 import type { ZodSchema } from 'zod/lib/types'
-import type { playerStats } from './playerStats'
+import type { playerStats } from './before/playerStats'
 
 export interface PlayerStat<T> {
   defaultValue: T
