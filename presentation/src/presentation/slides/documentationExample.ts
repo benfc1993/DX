@@ -1,4 +1,4 @@
-import { ImageElement, SlideData, fadeInAnim } from '@/lib/index'
+import { ImageElement, fadeInAnim, SlideData } from 'p5-present'
 import { slideBackground } from './templates/baseSlide'
 
 export const documentationExample = (): SlideData => ({

@@ -1,9 +1,7 @@
-import { fadeInAnim, linearMoveAnim } from '@/lib/index'
-import { RectElement, SlideData, TitleElement } from '@/lib/index'
-import p5 from 'p5'
 import { titleFontSize } from '../..'
 import { slideBackground } from './baseSlide'
 import { typeAnim } from '../../animations/typeAnim'
+import { SlideData, TitleElement } from 'p5-present'
 
 export const titleSlide = (
   title: string,
@@ -15,7 +13,7 @@ export const titleSlide = (
     {
       in: {
         title: {
-          element: (p: p5) =>
+          element: (p) =>
             new TitleElement(
               p,
               { x: 350, y: '50%' },

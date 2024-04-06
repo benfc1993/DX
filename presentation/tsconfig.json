@@ -10,12 +10,6 @@
     "moduleResolution": "node",
     "target": "es6",
     "allowJs": true,
-    // "resolveJsonModule": true,
-    // "declaration": true,
-    // "emitDeclarationOnly": true
-      "paths": {
-          "@/lib/*": ["./src/lib/*"],
-      },
   },
   "include": ["./src"]
 }

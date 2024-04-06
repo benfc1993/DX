@@ -1,15 +1,15 @@
 import {
   AnimationFn,
-  PixelPosition,
+  PixelPositionRot,
   Position,
   SlideElement,
   TextElement,
-} from '@/lib/index'
+} from 'p5-present'
 
 export const typeAnim: AnimationFn = (
   el: SlideElement,
-  _position: PixelPosition,
-  _endPixelPosition: PixelPosition,
+  _position: PixelPositionRot,
+  _endPixelPosition: PixelPositionRot,
   duration: number,
   endPos: Position,
 ) => {

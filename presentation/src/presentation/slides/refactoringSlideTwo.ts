@@ -1,8 +1,14 @@
-import { Position, Sketch, SlideElement, TextElement } from '@/lib/index'
-import { RectElement } from '@/lib/index'
-import { ElementGroup } from '@/lib/index'
-import { SlideData, fadeInAnim } from '@/lib/index'
+import {
+  ElementGroup,
+  fadeInAnim,
+  Position,
+  RectElement,
+  SlideData,
+  SlideElement,
+  TextElement,
+} from 'p5-present'
 import { slideBackground } from './templates/baseSlide'
+import { Sketch } from 'p5-typescript'
 
 class Arrow extends SlideElement {
   length: number

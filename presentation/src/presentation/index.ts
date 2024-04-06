@@ -1,4 +1,3 @@
-import { PresentationData, startPresentation } from '../lib'
 import { titleSlide } from './slides/templates/main'
 import { fonts } from './fontsList'
 import { images } from './imagesList'
@@ -8,6 +7,7 @@ import { diDxSlide } from './slides/diDx'
 import { coverSlide } from './slides/cover'
 import { refactoringOne } from './slides/refactoringSlideOne'
 import { refactoringTwo } from './slides/refactoringSlideTwo'
+import { PresentationData, startPresentation } from 'p5-present'
 
 export const colors: Record<string, [number, number, number]> = {
   teal: [60, 161, 156],

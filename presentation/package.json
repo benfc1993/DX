@@ -10,7 +10,10 @@
     "start": "ENVIRONMENT=PROD yarn watch "
   },
   "dependencies": {
-    "esbuild": "^0.20.1"
+    "esbuild": "^0.20.1",
+    "p5": "^1.9.2",
+    "p5-present": "^1.0.0",
+    "p5-typescript": "^4.3.0"
   },
   "devDependencies": {
     "@types/p5": "^1.7.6",

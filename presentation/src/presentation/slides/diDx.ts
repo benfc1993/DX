@@ -1,7 +1,5 @@
-import { SlideData, bulletPoints, fadeInAnim } from '@/lib/index'
+import { SlideData, bulletPoints, fadeInAnim, TextElement } from 'p5-present'
 import { slideBackground } from './templates/baseSlide'
-import { TextElement } from '@/lib/index'
-import p5 from 'p5'
 import { colors, presentation } from '..'
 
 export const diDxSlide: SlideData = {
@@ -11,7 +9,7 @@ export const diDxSlide: SlideData = {
     {
       in: {
         uiux: {
-          element: (p: p5) =>
+          element: (p) =>
             new TextElement(
               p,
               {

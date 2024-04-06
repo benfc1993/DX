@@ -1,9 +1,7 @@
-import { Sketch, TextElement } from '@/lib/index'
-import { RectElement } from '@/lib/index'
-import { ElementGroup } from '@/lib/index'
-import { SlideData } from '@/lib/index'
+import { ElementGroup, RectElement, TextElement, SlideData } from 'p5-present'
 import { colors } from '..'
 import { slideBackground } from './templates/baseSlide'
+import { Sketch } from 'p5-typescript'
 
 const thermometer = (p: Sketch, color: [number, number, number]) => [
   new RectElement(

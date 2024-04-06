@@ -1,14 +1,14 @@
+import { slideBackground } from './templates/baseSlide'
+import { colors, presentation } from '..'
 import {
+  ElementGroup,
   fadeInAnim,
   fadeOutAnim,
   ImageElement,
-  SlideData,
   TextElement,
   TitleElement,
-} from '@/lib/index'
-import { slideBackground } from './templates/baseSlide'
-import { colors, presentation } from '..'
-import { ElementGroup } from '@/lib/index'
+  SlideData,
+} from 'p5-present'
 
 export const coverSlide: SlideData = {
   title: 'First slide',
