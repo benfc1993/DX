@@ -1,6 +1,6 @@
 import { titleFontSize } from '../..'
 import { slideBackground } from './baseSlide'
-import { typeAnim } from '../../animations/typeAnim'
+import { typingAnim } from '../../animations/typeAnim'
 import { SlideData, TitleElement } from 'p5-present'
 
 export const titleSlide = (
@@ -24,7 +24,7 @@ export const titleSlide = (
                 color: color,
               },
             ),
-          animation: typeAnim,
+          animation: typingAnim,
           duration: 100,
         },
       },

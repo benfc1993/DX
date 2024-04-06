@@ -6,12 +6,12 @@ import {
   TextElement,
 } from 'p5-present'
 
-export const typeAnim: AnimationFn = (
+export const typingAnim: AnimationFn = (
   el: SlideElement,
   _position: PixelPositionRot,
   _endPixelPosition: PixelPositionRot,
   duration: number,
-  endPos: Position,
+  _endPos: Position,
 ) => {
   if (!(el instanceof TextElement)) return new Promise((res) => res())
 

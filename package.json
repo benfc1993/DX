@@ -6,9 +6,9 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "env:encrypt": "./sops/encrypt-env-local.sh",
-    "env:decrypt": "./sops/decrypt-env-local.sh",
-    "generate:docs": "./documentation/generate-docs.sh",
+    "env:encrypt": "./5-env-local/encrypt-env-local.sh",
+    "env:decrypt": "./5-env-local/decrypt-env-local.sh",
+    "generate:docs": "./6-documentation/generate-docs.sh",
     "prepare": "husky"
   },
   "repository": {

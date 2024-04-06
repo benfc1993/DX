@@ -1,10 +1,8 @@
 # Docs
 
-[Documentation](./documentation/documentation.md)
+[SOPS and env files](./5-env-local/sops.doc.md)
 
-[SOPS and env files](./sops/sops.md)
+[Interaction testing](./4-interaction-testing/interaction-testing.doc.md)
 
-[Interaction testing](./interaction-testing/interaction-testing.md)
-
-[Navigation](./navigation/navigation.md)
+[Documentation](./6-documentation/documentation.doc.md)
 
