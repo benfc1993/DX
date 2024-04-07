@@ -1,4 +1,4 @@
-import { Investor, giveTopInvestorsMoreMoney } from './refactoring'
+import { Investor, giveTopInvestorsMoreMoney } from '../refactoring'
 
 const createInvestors = (
   count: number,

@@ -1,2 +1,2 @@
 npm run generate:docs
-git add \*.md
+git add \*.doc.md docs.md

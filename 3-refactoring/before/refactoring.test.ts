@@ -1,5 +1,5 @@
-import { Investor, giveTopInvestorsMoreMoney } from './refactoring'
-import * as maths from './maths'
+import { Investor, giveTopInvestorsMoreMoney } from '../refactoring'
+import * as maths from '../maths'
 
 const spySortDesc = jest.spyOn(maths, 'sortDesc')
 const spyTopPercent = jest.spyOn(maths, 'topPercent')

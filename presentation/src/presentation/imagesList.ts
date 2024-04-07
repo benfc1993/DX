@@ -1,8 +1,9 @@
 export const images = [
-  'mechanic-1.png',
-  'mechanic-2.png',
-  'documentation-example.png',
-  'gh.png',
-  'probe.png',
-  'profile.png',
+"documentation-example.png",
+"gh.png",
+"mechanic-1.png",
+"mechanic-2.png",
+"probe.png",
+"profile.png",
+"qrcode.png"
 ] as const

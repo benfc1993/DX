@@ -7,6 +7,8 @@ import { refactoringOne } from './slides/refactoringSlideOne'
 import { refactoringTwo } from './slides/refactoringSlideTwo'
 import { PresentationData, startPresentation } from 'p5-present'
 import { takeAwaysSlide } from './slides/takeaways'
+import { currentCodeSlide } from './slides/currentCode'
+import { endSlide } from './slides/endSlide'
 
 export const colors: Record<string, [number, number, number]> = {
   teal: [60, 161, 156],
@@ -35,6 +37,7 @@ export const presentation: PresentationData<typeof fonts, typeof images> = {
   images,
   slides: [
     coverSlide,
+    currentCodeSlide,
     titleSlide('Fuctional Vs Useable', colors.red),
     dxSlide,
     titleSlide('Testing', colors.teal),
@@ -46,6 +49,7 @@ export const presentation: PresentationData<typeof fonts, typeof images> = {
     titleSlide('Documentation', colors.red),
     titleSlide('Automate everything', colors.yellow),
     takeAwaysSlide,
+    endSlide,
   ],
 }
 
