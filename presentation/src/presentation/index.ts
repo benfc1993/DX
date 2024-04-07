@@ -1,14 +1,11 @@
 import { titleSlide } from './slides/templates/main'
 import { fonts } from './fontsList'
 import { images } from './imagesList'
-import { documentationExample } from './slides/documentationExample'
-import { uiUxSlide } from './slides/uiUx'
-import { diDxSlide } from './slides/diDx'
+import { dxSlide } from './slides/dx'
 import { coverSlide } from './slides/cover'
 import { refactoringOne } from './slides/refactoringSlideOne'
 import { refactoringTwo } from './slides/refactoringSlideTwo'
 import { PresentationData, startPresentation } from 'p5-present'
-import { currentCodeSlide } from './slides/currentCode'
 import { takeAwaysSlide } from './slides/takeaways'
 
 export const colors: Record<string, [number, number, number]> = {
@@ -38,9 +35,8 @@ export const presentation: PresentationData<typeof fonts, typeof images> = {
   images,
   slides: [
     coverSlide,
-    currentCodeSlide,
-    titleSlide('Fuctional but difficult', colors.red),
-    titleSlide('Developer first', colors.yellow),
+    titleSlide('Fuctional Vs Useable', colors.red),
+    dxSlide,
     titleSlide('Testing', colors.teal),
     titleSlide('Refactoring', colors.blue),
     refactoringOne,

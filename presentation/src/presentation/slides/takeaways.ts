@@ -31,9 +31,14 @@ export const takeAwaysSlide: SlideData = {
     },
     ...bulletPoints(
       'points',
-      [''],
+      [
+        'Code always changes',
+        'Code front to back',
+        'Build tools',
+        'Usability Vs Functionality',
+      ],
       {
-        x: '50%+-200',
+        x: '30%',
         y: '60%',
       },
       { size: 46 },
