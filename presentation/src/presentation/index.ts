@@ -38,7 +38,7 @@ export const presentation: PresentationData<typeof fonts, typeof images> = {
   slides: [
     coverSlide,
     currentCodeSlide,
-    titleSlide('Fuctional Vs Useable', colors.red),
+    titleSlide('Fuctional Vs Usable', colors.red),
     dxSlide,
     titleSlide('Testing', colors.teal),
     titleSlide('Refactoring', colors.blue),
