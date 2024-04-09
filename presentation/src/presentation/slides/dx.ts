@@ -19,11 +19,11 @@ export const dxSlide: SlideData = {
             new TextElement(
               p,
               {
-                x: '50%',
+                x: '10%',
                 y: '40%',
               },
               {
-                alignment: { h: 'center', v: 'center' },
+                alignment: { h: 'left', v: 'center' },
                 text: 'UX Principles',
                 size: presentation.titleFontSize,
                 font: presentation.titleFont,
@@ -46,7 +46,7 @@ export const dxSlide: SlideData = {
         'Design for Accessibility',
       ],
       {
-        x: '30%',
+        x: '10%',
         y: '60%',
       },
       { size: 46 },
@@ -64,11 +64,11 @@ export const dxSlide: SlideData = {
             new TextElement(
               p,
               {
-                x: '50%',
+                x: '10%',
                 y: '40%',
               },
               {
-                alignment: { h: 'center', v: 'center' },
+                alignment: { h: 'left', v: 'center' },
                 text: 'DX Principles',
                 size: presentation.titleFontSize,
                 font: presentation.titleFont,
@@ -91,7 +91,7 @@ export const dxSlide: SlideData = {
         'Design for Change',
       ],
       {
-        x: '30%',
+        x: '10%',
         y: '60%',
       },
       { size: 46, color: [94, 189, 204] },

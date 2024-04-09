@@ -16,7 +16,7 @@ export const titleSlide = (
           element: (p) =>
             new TitleElement(
               p,
-              { x: 350, y: '50%' },
+              { x: '10%', y: '50%' },
               {
                 text: title,
                 size: titleFontSize,

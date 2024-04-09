@@ -3,7 +3,7 @@ import { colors, presentation } from '..'
 import { slideBackground } from './templates/baseSlide'
 
 export const takeAwaysSlide: SlideData = {
-  title: 'DI / DX',
+  title: 'Takeaways',
   background: slideBackground,
   frames: [
     {
@@ -13,11 +13,11 @@ export const takeAwaysSlide: SlideData = {
             new TextElement(
               p,
               {
-                x: '50%',
+                x: '10%',
                 y: '40%',
               },
               {
-                alignment: { h: 'center', v: 'center' },
+                alignment: { h: 'left', v: 'center' },
                 text: 'Takeaways',
                 size: presentation.titleFontSize,
                 font: presentation.titleFont,
@@ -38,7 +38,7 @@ export const takeAwaysSlide: SlideData = {
         'Usability Vs Functionality',
       ],
       {
-        x: '30%',
+        x: '10%',
         y: '60%',
       },
       { size: 46 },

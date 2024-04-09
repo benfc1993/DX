@@ -26,7 +26,7 @@ export const endSlide: SlideData = {
           element: (p) =>
             new ImageElement(
               p,
-              { x: '50%', y: '65%' },
+              { x: '50%', y: '60%' },
               { image: 'qrcode', size: { h: '35%' } },
             ),
         },
@@ -34,7 +34,7 @@ export const endSlide: SlideData = {
           element: (p) =>
             new TextElement(
               p,
-              { x: '50%', y: '90%' },
+              { x: '50%', y: '95%' },
               {
                 text: 'github.com/benfc1993/dx',
                 alignment: { h: 'center' },

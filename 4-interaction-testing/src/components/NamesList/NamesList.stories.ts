@@ -16,19 +16,18 @@ type Story = StoryObj<typeof meta>
 
 export const SingleName: Story = {
   args: {
-    names: ['Ben'],
+    names: ['Sally'],
   },
-  play: async ({ args, canvasElement }) => {
+  play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
-    args.names = ['Ben']
 
-    await expect(canvas.getByTestId('name-Ben')).toBeInTheDocument()
+    await expect(canvas.getByTestId('name-Sally')).toBeInTheDocument()
   },
 }
 
 export const MultipleNames: Story = {
   args: {
-    names: ['Ben', 'Sally', 'Alice', 'Evan', 'Hannah', 'Jen', 'Sarah'],
+    names: ['Sally', 'Rudolf', 'Nish', 'Alice', 'Yuki', 'Mwaba', 'Farzana'],
   },
   play: async ({ args, canvasElement }) => {
     const canvas = within(canvasElement)

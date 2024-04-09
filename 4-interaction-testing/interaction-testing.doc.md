@@ -1,7 +1,8 @@
 [<- Back](../docs.md)
+
 # Interaction testing
 
-The setup for adding interaction testing to storybook is in the (official docs)[https://storybook.js.org/docs/writing-tests/interaction-testing].
+The setup for adding interaction testing to storybook is in the [official docs](https://storybook.js.org/docs/writing-tests/interaction-testing).
 
 ## Why interaction tests
 
